@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-def dashboard(request):
-    return render(request, 'Admin/Dashboard.html')
+
+def admin_hai(request):
+    return render(request, 'Admin/hai.html')
 
 def admin_template(request):
-    return render(request, "Admin/AdminTemplates/Dashboard.html")
+    return render(request, 'Admin/AdminTemplates/Dashboard.html')
