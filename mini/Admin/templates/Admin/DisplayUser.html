@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Display</title>
+</head>
+<body>
+    <h1>Display Users</h1>
+    <table border="1">
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+        {% for i in users %}
+        <tr>
+            <td>{{ i.user_name }}</td>
+            <td>{{ i.password }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'admin_hai' %}">Register another user</a>
+</body>
+</html>
